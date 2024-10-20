@@ -7,12 +7,12 @@ import { SnakeNamingStrategy } from "typeorm-naming-strategies";
 export class TypeOrmConfigService implements TypeOrmOptionsFactory { 
     createTypeOrmOptions(): TypeOrmModuleOptions {
         return {
-            database: 'nestjs-pp',
+            database: 'nestjs_pp',
             username: 'root',
-            password: 'root',
-            synchronize: false,
-            port: 3306,
+            password: '2419',
             host: 'localhost',
+            port: 3306,
+            synchronize: false,
             type: 'mysql',
             entities: [join(__dirname, '..','**/*entity.{ts,js}')],
             migrations: [join(__dirname, '..', './database/migration.{ts,js}')],
